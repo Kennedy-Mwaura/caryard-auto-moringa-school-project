@@ -128,11 +128,24 @@ nav{
     font-size: 40px;
     text-align: start;
 }
-#main-section-1 p{
+.main-para{
     font-family: sans-serif;
     font-size: 1.2rem;
     text-align: center;
     width: 700px;
     text-align: left;
 }
+#main-section-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 20px 0 50px;
+}
+#main-section-2 div p{
+    width: 300px;
+}
 /* ----------------main syles---------------------------------- */
+
+/* -------------------Footer section--------------------------- */
+
+/* -------------------End Footer section--------------------------- */
