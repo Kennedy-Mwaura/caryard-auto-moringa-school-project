@@ -65,9 +65,27 @@ body{
 }
 .menu{
     width: 20%;
-    color: white;
     background-color: rgb(0, 8, 43);
     font-size: 1.5em;
+    padding-left: 40px;
+}
+/* .menu ul :first-child{
+    display: flex;
+    align-items: center;
+    padding: auto;
+} */
+.menu>ul{
+    display: flex;
+    flex-direction: column;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu img{
+    max-width: 20%;
+    background-color: white;
+    border-radius: 100%;
 }
 .rec div{
     width: 18%;
@@ -81,18 +99,20 @@ body{
     text-align: center;
     margin-top: 50px;
 }
-.menu ul :first-child{
-    display: flex;
-    align-items: center;
-    padding: auto;
-}
-.menu img{
-    max-width: 20%;
-    background-color: white;
-    border-radius: 100%;
-}
+
 .table{
     border: 1px solid black;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 0px 8px grey;
+}
+table ,th ,td {
+    border-bottom: 1.5px solid black;
+    border-collapse: collapse;
+}
+tr:nth-child(even){
+    background-color: rgb(230, 230, 230);
+}
+tr :hover{
+    background-color: rgb(206, 206, 206);
 }
