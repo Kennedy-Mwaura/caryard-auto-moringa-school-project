@@ -50,7 +50,7 @@ body{
 /* ========end header section============ */
 
 
-
+/* section two styling */
 .sec-two{
     display: flex;
     justify-content: space-between;
@@ -61,19 +61,18 @@ body{
 
 }
 .data{
-    width: 70%;
+    width: 80%;
 }
 .menu{
-    width: 20%;
+    width: 15%;
+    height: 300px;
     background-color: rgb(0, 8, 43);
     font-size: 1.5em;
     padding-left: 40px;
-}
-/* .menu ul :first-child{
     display: flex;
-    align-items: center;
-    padding: auto;
-} */
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .menu>ul{
     display: flex;
     flex-direction: column;
@@ -81,6 +80,7 @@ body{
 .menu a{
     text-decoration: none;
     color: white;
+    padding-top: 20px;
 }
 .menu img{
     max-width: 20%;
@@ -116,3 +116,5 @@ tr:nth-child(even){
 tr :hover{
     background-color: rgb(206, 206, 206);
 }
+
+/* ==================end of section two styling=========== */
