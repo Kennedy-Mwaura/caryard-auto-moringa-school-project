@@ -95,4 +95,29 @@ nav{
     font-family: "Roboto Mono", sans-serif;
     font-size: 40px;
 }
+
+#section-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#section-2 div:nth-child(1){
+    width: 200px;
+}
+#section-2 div:nth-child(2){
+    width: 300px;
+    text-align: center;
+    margin-right: -50px;
+    font-family: sans-serif;
+    font-size: larger;
+}
+#section-2 div:nth-child(3){
+    width: 200px;
+}
+#section-2 div img{
+    width: 400px;
+}
+
+
+
 /* --------------End Header styles------------------------------ */
