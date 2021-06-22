@@ -119,4 +119,70 @@ tr :hover{
 
 /* ==================end of section two styling=========== */
 
+.footer{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    text-align: center;
+    background-color: rgb(201, 201, 201);
+    height: 300px;
+    font-size: 1.2rem;
+}
+.icons{
+    font-size: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(0, 0, 255, 0.678);
+}
+.info2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    height: 300px;
 
+}
+.info1 div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info1 a{
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    font-size: 1.2em;
+    color: black;
+}
+
+.info2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+.info2 a{
+    text-decoration: none;
+    font-size: 1.4em;
+    color: rgb(0, 4, 245);
+}
+.image>img{
+    min-width: 100%;
+}
