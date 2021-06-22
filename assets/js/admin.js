@@ -1,18 +1,18 @@
     // Data
-    const usersChrome = 243;
-    const usersFirefox = 70;
-    const usersOpera = 100;
-    const usersSafari = 60;
-    const usersEdge = 120;
+    const usersMazda = 243;
+    const usersLandRover = 70;
+    const usersMercedesBenz = 100;
+    const usersAudi= 60;
+    const usersIsuzu= 120;
 
     //pie
     var ctxP = document.getElementById("pieChart").getContext('2d');
     var myPieChart = new Chart(ctxP, {
       type: 'pie',
       data: {
-        labels: ["Chrome", "FireFox", "Opera", "Safari", "Edge"],
+        labels: ["Mazda", "Land-rover", "Mercedes-Benz", "Audi", "Isuzu"],
         datasets: [{
-          data: [usersChrome, usersFirefox, usersOpera, usersSafari, usersEdge],
+          data: [usersMazda, usersLandRover, usersMercedesBenz, usersAudi, usersIsuzu],
           backgroundColor: ["#9c27b0", "#ad1457", "#0277bd", "#303f9f ", "#009688"],
           hoverBackgroundColor: ["#a34cb3", "#a85076", "#679bb9", "#6d74a1", "#28a89b"],
           borderWidth: 4,
@@ -60,8 +60,8 @@
     });
 
     // Table
-    document.getElementById("cell-chrome").innerHTML = usersChrome;
-    document.getElementById("cell-firefox").innerHTML = usersFirefox;
-    document.getElementById("cell-opera").innerHTML = usersOpera;
-    document.getElementById("cell-safari").innerHTML = usersSafari;
-    document.getElementById("cell-edge").innerHTML = usersEdge;
+    document.getElementById("cell-mazda").innerHTML = usersMazda;
+    document.getElementById("cell-landrover").innerHTML = usersLandRover;
+    document.getElementById("cell-mercedesbenz").innerHTML = usersMercedesBenz;
+    document.getElementById("cell-audi").innerHTML = usersAudi;
+    document.getElementById("cell-isuzu").innerHTML = usersIsuzu;
