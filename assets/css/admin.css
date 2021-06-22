@@ -1,5 +1,30 @@
+body {
+    background-color: #eee;
+  }
 .name{
     display:flex;
     flex-direction: row;
     margin-right: 5px;
+}
+.thead {
+    text-align: center;
+
+}
+.extra{
+    text-align: left;
+}
+.t1 {
+    max-width: fit-content;
+    float: left;
+    display: flex;
+    margin: 0;
+}
+.tmain{
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    text-decoration-color: azure
+}
+.menu{
+    margin-top: 10px;
 }
