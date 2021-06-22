@@ -121,7 +121,7 @@ tr :hover{
 
 .footer{
     margin-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .info{
     display: flex;
@@ -182,6 +182,24 @@ tr :hover{
     text-decoration: none;
     font-size: 1.4em;
     color: rgb(0, 4, 245);
+}
+input[type=text], input[type=email]{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border:1px solid rgb(0, 4, 245);;
+}
+input[type=button]{
+    width: 20%;
+    height: 40px;
+}
+input[type=button]:hover{
+    background-color: #6C5CE7;
+    box-shadow: 2px 2px 4px #6C5CE7;
+    border-width: 0px;
+    color: white;
+    font-size: 1em;
+    transition: ease-in 0.2s;
 }
 .image>img{
     min-width: 100%;
