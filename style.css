@@ -284,12 +284,14 @@
     -webkit-transition:-webkit-transform 1.0s;
     transition: -webkit-transform 1.0s;
     transition: transform 1.0s;
-    transition: transform 1.0s, -webkit-transform 1.2s;;
+    transition: transform 1.0s, -webkit-transform 1.0s;;
   }
   
   .img-btn span.m-in{
     -webkit-transform:translateY(-72px);
             transform:translateY(-72px);
+
+
   }
   
   .cont.s-signup .img-btn span.m-in{
