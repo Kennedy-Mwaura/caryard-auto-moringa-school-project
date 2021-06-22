@@ -12,6 +12,8 @@ body{
 }
 nav,footer{
     width: 100vw;
+    background-color:grey;
+    opacity: 50%;
 }
 /* ------------------End General styles---------------------- */
 
@@ -21,7 +23,7 @@ nav{
     justify-content: space-between;
     align-items: flex-start;
     margin: 10px;
-    position: fixed;
+    /* position: fixed; */
 }
 #logo{
     border-radius: 30px;
@@ -76,10 +78,10 @@ nav{
 /* --------------End Nav styles--------------------------- */
 
 /* --------------Header styles------------------------------ */
-header{
+/* header{
     position: relative;
     top: 200px;
-}
+} */
 #section-1{
     display: flex;
     flex-direction: column;
@@ -103,7 +105,15 @@ header{
     font-family: "Roboto Mono", sans-serif;
     font-size: 40px;
 }
-
+#btn-like{
+    background-color:blue;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Roboto";
+    text-decoration: none;
+}
 #section-2{
     display: flex;
     align-items: center;
@@ -125,9 +135,24 @@ header{
 #section-2 div img{
     width: 400px;
 }
+.btn-like{
+    background-color: blue;
+    padding: 15px;
+    color:white;
+    border-radius: 20px;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+.btn-like:hover,#btn-like:hover{
+    background-color: chartreuse;
+}
 /* --------------End Header styles------------------------------ */
 
 /* ----------------main syles---------------------------------- */
+/* main{
+    position: relative;
+    top: 200px;
+} */
 #main-section-1{
     margin: 30px;
 }
@@ -160,6 +185,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: relative;
+    top: 200px; */
 }
 #social{
     margin-left: 30px;
