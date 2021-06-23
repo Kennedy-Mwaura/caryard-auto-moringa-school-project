@@ -10,3 +10,5 @@ This is a project for week 4. Building a MVP for a Car Yard/Dealership for Digit
 * CSS3
 * Javascript
 * Python
+
+## Contributors
