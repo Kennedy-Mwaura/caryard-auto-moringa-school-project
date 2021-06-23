@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
 
 body{
     padding: 10px;
@@ -30,6 +31,7 @@ body{
     width: 70%;display: flex;
     justify-content: space-evenly;
     font-size: 1.5em;
+    font-family: 'Orbitron', sans-serif;
 }
 .links a{
     text-decoration: none;
@@ -61,6 +63,25 @@ body{
     justify-content: space-between;
 
 }
+.rec div{
+    width: 18%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 0px 7px grey;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+    height: 120px;
+}
+.rec div:hover{
+    background-color: rgb(238, 231, 231);
+    color: #6C5CE7;
+    border-bottom:1px solid #6C5CE7;
+    border-right:1px solid #6C5CE7;
+    box-shadow: 2px 0px 7px #6c5ce773;
+}
+
 .data{
     width: 80%;
 }
@@ -88,12 +109,6 @@ body{
     max-width: 20%;
     background-color: white;
     border-radius: 100%;
-}
-.rec div{
-    width: 18%;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 2px 0px 7px grey;
 }
 .table>table{
     width: 100%;
@@ -190,6 +205,7 @@ input[type=text], input[type=email]{
 input[type=button]{
     width: 20%;
     height: 40px;
+    border-radius: 10px;
 }
 input[type=button]:hover{
     background-color: #6C5CE7;
@@ -203,7 +219,7 @@ input[type=button]:hover{
     min-width: 100%;
 }
 
-/* =====adding responsiveness to items====== */
+/* =====adding more responsiveness to items====== */
 
 .sec-two>a{
     font-size: 4em;
@@ -214,3 +230,4 @@ input[type=button]:hover{
     background-color: rgba(255, 255, 255, 0.192);
     border-right: 4px solid whitesmoke;
 }
+
