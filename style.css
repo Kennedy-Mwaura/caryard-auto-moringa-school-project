@@ -67,7 +67,7 @@
     margin-top: 5px;
     font-size: 18px;
     padding-bottom: 5px;
-    border-bottom: 1px solid rgba(109, 93, 93, 0.6);
+    border-bottom: 1px solid rgba(109, 93, 93, 0.9);
     text-align: center;
     font-family: 'Nunito', sans-serif; 
   }
@@ -139,7 +139,7 @@
     width: 900px;
     height: 100%;
     padding-left: 260px;
-    background: rgb(180, 181, 145);
+    background: rgba(180, 181, 145);
     -webkit-transition: -webkit-transform 1.2s ease-in-out;
     transition: -webkit-transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out;
