@@ -1,0 +1,337 @@
+/* ------------------General styles------------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+nav,footer{
+    width: 100vw;
+    background-color:grey;
+    opacity: 50%;
+}
+/* ------------------End General styles---------------------- */
+
+/* --------------Nav styles--------------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+}
+#logo{
+    border-radius: 30px;
+    margin-left: 5px;
+}
+#logo>a>img{
+    background-color: blue;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#nav-links>ul{
+    display: flex;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+#nav-links>ul>li{
+    padding: 10px;
+    margin: 10px;
+}
+#nav-links a{
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: "Roboto";
+}
+.hv-effect:hover{
+    background-color: chartreuse;
+    border-radius: 20px;
+    color: black;
+}
+#green{
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
+#green>a{
+    color: white;
+}
+#blue{
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+#black>a{
+    color: black;
+}
+#blue>a{
+    color: white;
+}
+/* --------------End Nav styles--------------------------- */
+
+/* --------------Header styles------------------------------ */
+#section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+#section-1>h1{
+    color:black;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+
+}
+#section-1>h1 span{
+    background-color: rgb(128, 219, 128);
+    border-radius: 30px;
+}
+#section-1>h2{
+    color: black;
+    font-weight: 700;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 40px;
+}
+#btn-like{
+    background-color:blue;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+#section-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+#section-2 div:nth-child(1){
+    width: 400px;
+    height: 300px;
+}
+#abt-us h2{
+    font-family: "Roboto";
+    text-align: center;
+}
+#abt-us p{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+#section-2 div:nth-child(2){
+    width: 300px;
+    text-align: center;
+    margin-right: -50px;
+    font-family: sans-serif;
+    font-size: larger;
+}
+#car-gal:hover{
+    cursor: pointer;
+}
+.prev-btn,
+.next-btn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.prev-btn{
+    margin-right: 110px;
+}
+#section-2 div img{
+    width: 400px;
+}
+.btn-like{
+    background-color:blue;
+    padding: 15px;
+    color:white;
+    border-radius: 20px;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+.btn-like:hover,#btn-like:hover{
+    background-color: chartreuse;
+}
+/* --------------End Header styles------------------------------ */
+
+/* ----------------main syles---------------------------------- */
+#main-section-1{
+    margin: 30px;
+}
+#main-section-1 h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-align: start;
+}
+.main-para{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 700px;
+    text-align: left;
+}
+#main-section-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 20px 0 50px;
+}
+#main-section-2 div p{
+    width: 300px;
+}
+#car-gal>img{
+    border-radius: 20px;
+    width: fit-content;
+}
+/* ----------------main syles---------------------------------- */
+
+/* -------------------Footer section--------------------------- */
+footer{
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#social{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#social h3{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 30px;
+}
+#social>a>img{
+    height: 30px;
+    margin-bottom: 50px;
+    padding: 1.2px;
+}
+#social>a>img:hover{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+#contact{
+    margin-top: 70px;
+}
+#contact>h3{
+    margin-bottom: 10px;
+    font-family: "Roboto";
+    font-size: 30px;
+    color: blue;
+}
+#contact>h3:nth-child(3){
+    margin-top: 20px;
+}
+#contact>a{
+    font-family: "Roboto-mono";
+    font-size: 20px;
+    text-decoration: none;
+}
+#contact>a:hover{
+    background-color: chartreuse;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+form>label{
+    font-family: "Roboto";
+    font-size: 30px;
+}
+form>input{
+    size: 20px;
+}
+form>button{
+    background-color:blue;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+form>button:hover{
+    background-color:green;
+    color: white;
+    box-shadow: 2px 2px 5px grey;
+}
+.form-lab{
+    padding: 10px;
+    border-radius: 10px;
+}
+/* -------------------End Footer section--------------------------- */
+
+@media only screen and (max-width:480px) {
+    #logo>a>img{
+        height:50px;
+    }
+    #section-1>h1{
+        font-size: 20px;
+    }
+    #section-1>h2{
+        font-size: 10px;
+    }
+    #main-section-1{
+        display: none;
+    }
+    #main-section-2{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    #logo>a>img{
+        height:70px;
+    }
+    #section-1>h1{
+        font-size: 40px;
+    }
+    #section-1>h2{
+        font-size: 20px;
+    }
+    #section-2{
+        display: block;
+    }
+    #section-1>h2{
+        font-size: 10px;
+    }
+    #main-section-1{
+        display: none;
+    }
+    #main-section-2{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #car-gal{
+        display: block;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1040px) {
+    #nav-links a{
+        font-size: small;
+    }
+    
+}
+
