@@ -1,8 +1,9 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 	<title>Sign-Up/Sign In</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
 </head>
@@ -10,16 +11,21 @@
   <div class="cont">
     <div class="form sign-in">
       <h2>Sign In</h2>
+      
+      <form method="post">
       <label>
         <span>Email Address</span>
-        <input type="email" name="email">
+        <input id="login_email" type="email" name="email" required>
+
       </label>
       <label>
         <span>Password</span>
-        <input type="password" name="password">
+        <input id="" type="password" name="password" required>
+
       </label>
-      <button class="submit" type="button">Sign In</button>
-      <p class="forgot-pass">Forgot Password ?</p>
+      <button class="submit" type="submit">Sign In</button>
+      </form>
+      <p class="forgot-password">Forgot Password ?</p>
 
       <div class="soc-media">
         <ul>
@@ -46,26 +52,31 @@
           <span class="m-in">Sign In</span>
         </div>
       </div>
+      <form onsubmit="return handleSignUpFormSubmit(event)" method="post">
       <div class="form sign-up">
         <h2>Sign Up</h2>
         <label>
           <span>Name</span>
-          <input type="text">
+          <input type="text" required>
         </label>
         <label>
           <span>Email</span>
-          <input type="email">
+          <input type="email" required>
         </label>
         <label>
           <span>Password</span>
-          <input type="password">
+          <input id="signup_password" type="password" required>
+          <span style="display: none;" id="short_password_feedback" style="color:red !important;">Password must be greater than 8 characters!</span>
+          <span style="display: none;" id="not_password_match_feedback" style="color:red !important;">Password do not match</span>
         </label>
         <label>
           <span>Confirm Password</span>
-          <input type="password">
+          <input id="confirm_password" type="password" required>
         </label>
-        <button type="button" class="submit">Sign Up Now</button>
+        <button type="submit" class="submit">Sign Up Now</button>
+      </form>
       </div>
+   
     </div>
   </div>
 <script type="text/javascript" src="script.js"></script>

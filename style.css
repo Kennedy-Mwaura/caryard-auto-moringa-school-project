@@ -96,17 +96,17 @@
     background: -webkit-linear-gradient(left, #b224ef, #7579ff);
   }
   
-  .forgot-pass{
+  .forgot-password{
     margin-top: 15px;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
-    color: #0c0101;
+    color: #8c1010;
     cursor: pointer;
   }
   
-  .forgot-pass:hover{
-    color: rgb(136, 124, 30);
+  .forgot-password:hover{
+    color: rgb(19, 140, 13);
   }
   
   .soc-media{
