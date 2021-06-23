@@ -70,7 +70,7 @@ body{
     box-shadow: 2px 0px 7px grey;
     display: flex;
     flex-direction: column;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     justify-content: space-evenly;
     height: 120px;
 }

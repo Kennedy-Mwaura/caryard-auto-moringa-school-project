@@ -13,14 +13,9 @@ function popup(){
 var count = document.querySelectorAll(".anim");
 var rec = document.querySelector(".rec");
 
-
-
 count.forEach((anim) => {
   anim.innerHTML = "0";
-var span =["<span>sold</span>","<span>In stock</span>","<span>Recieved</span>","<span>Incoming</span>","<span>sold</span>"]
-var sd = span.forEach(element => {
-  return element;
-});
+
   const update = function(){
     var target = anim.getAttribute('data-target');
     var no = +anim.innerHTML;
@@ -29,14 +24,9 @@ var sd = span.forEach(element => {
       var fun = function(){  
       return no+incr;
       };
-      anim.innerHTML =sd + '</br>' + Math.ceil(fun());
-      setTimeout(update,1)
+      anim.innerHTML = Math.ceil(fun());
+      setTimeout(update,2)
     }
   }
   update();
 });
-
-
-
-
-rec.style.fontSize = "1.2em";
