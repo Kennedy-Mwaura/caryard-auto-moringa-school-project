@@ -17,7 +17,12 @@
             <div id="logo">
                 <a href="#"><img src="./assets/images/logo/1.png" alt="logo"></a>
             </div>
-            <div id="nav-links"class="dropdown">
+            <div>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                  </button>
+            </div>
+            <div id="nav-links" class="dropdown">
                 <ul>
                     <!-- <li id="black"><a href="#home" class="hv-effect">Home</a></li> -->
                     <li><a href="" class="hv-effect">Inventory</a></li>
@@ -125,17 +130,18 @@
                 <h3>Follow us</h3>
                 <a href="#">hello@caryardauto.com</a>
                 <h3>Keep in touch</h3>
-                <form name="contact-us" action="index.html" method="POST"   return onclick=validate()>
-                    <label for="name">Your name</label>
-                    <input id="name" type="text" placeholder="John Doe" name="name" required style="font-family: sans-serif;" max="20" min="4">
-
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="abc@gamil.com" name="email" required style="font-family: sans-serif";>
+                <form name="contact-us" action="signUp.html" method="POST"   return onclick=validate()>
+                    <label for="name">Name</label>
                     <br>
-
+                    <input class="form-lab" id="name" type="text" placeholder="John Doe" name="name" required >
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input class="form-lab" id="email" type="email" placeholder="abc@gamil.com" name="email" required >
+                    <br>
                     <label for="comments">Comments</label>
                     <br>
-                    <textarea for="comments" name="comments" id="comments" cols="50" rows="10" placeholder="leave your comments here" style="font-family: sans-serif";></textarea>
+                    <textarea class="form-lab" for="comments" name="comments" id="comments" cols="50" rows="5" placeholder="leave your comments here"></textarea>
                     <br>
                     <button type="submit">submit</button>
                 </form>

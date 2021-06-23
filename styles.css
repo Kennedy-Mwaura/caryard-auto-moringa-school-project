@@ -187,6 +187,10 @@ nav{
 #main-section-2 div p{
     width: 300px;
 }
+#car-gal>img{
+    border-radius: 20px;
+    width: fit-content;
+}
 /* ----------------main syles---------------------------------- */
 
 /* -------------------Footer section--------------------------- */
@@ -260,4 +264,74 @@ form>button:hover{
     color: white;
     box-shadow: 2px 2px 5px grey;
 }
+.form-lab{
+    padding: 10px;
+    border-radius: 10px;
+}
 /* -------------------End Footer section--------------------------- */
+
+@media only screen and (max-width:480px) {
+    #logo>a>img{
+        height:50px;
+    }
+    #section-1>h1{
+        font-size: 20px;
+    }
+    #section-1>h2{
+        font-size: 10px;
+    }
+    #main-section-1{
+        display: none;
+    }
+    #main-section-2{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    #logo>a>img{
+        height:70px;
+    }
+    #section-1>h1{
+        font-size: 40px;
+    }
+    #section-1>h2{
+        font-size: 20px;
+    }
+    #section-2{
+        display: block;
+    }
+    #section-1>h2{
+        font-size: 10px;
+    }
+    #main-section-1{
+        display: none;
+    }
+    #main-section-2{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #car-gal{
+        display: block;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1040px) {
+    #nav-links a{
+        font-size: small;
+    }
+    
+}
+
