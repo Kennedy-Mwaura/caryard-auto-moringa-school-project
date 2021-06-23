@@ -103,3 +103,15 @@ nextBtn.addEventListener("click", function(){
     showCar(currentCar);
 });
 
+function validate(){
+    let userName = document.getElementById("name");
+    let userEmail = document.getElementById("email");
+    let userComments = document.getElementById("coments");
+    console.log(userName)
+    if(userName.value.trim ==""|| userEmail.value.trim==""||userComments.value.trim==""){
+        alert("No field can be blank");
+        return false;
+    }else{
+        return true;
+    }
+};

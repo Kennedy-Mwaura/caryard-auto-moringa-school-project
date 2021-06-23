@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
         <!-- ----------------------nav------------------------------------ -->
@@ -16,7 +17,7 @@
             <div id="logo">
                 <a href="#"><img src="./assets/images/logo/1.png" alt="logo"></a>
             </div>
-            <div id="nav-links">
+            <div id="nav-links"class="dropdown">
                 <ul>
                     <!-- <li id="black"><a href="#home" class="hv-effect">Home</a></li> -->
                     <li><a href="" class="hv-effect">Inventory</a></li>
@@ -124,18 +125,19 @@
                 <h3>Follow us</h3>
                 <a href="#">hello@caryardauto.com</a>
                 <h3>Keep in touch</h3>
-                <form action="post">
-                    <label for="">Your name</label>
-                    <input type="text" placeholder="John Doe" name="name" required>
+                <form name="contact-us" action="index.html" method="POST"   return onclick=validate()>
+                    <label for="name">Your name</label>
+                    <input id="name" type="text" placeholder="John Doe" name="name" required style="font-family: sans-serif;" max="20" min="4">
 
-                    <label for="">Email</label>
-                    <input type="email" placeholder="abc@gamil.com" name="email" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="abc@gamil.com" name="email" required style="font-family: sans-serif";>
                     <br>
 
-                    <label for="">Comments</label>
-                    <input type="text" placeholder="comments" name="comments" required>
+                    <label for="comments">Comments</label>
                     <br>
-                    <button>submit</button>
+                    <textarea for="comments" name="comments" id="comments" cols="50" rows="10" placeholder="leave your comments here" style="font-family: sans-serif";></textarea>
+                    <br>
+                    <button type="submit">submit</button>
                 </form>
             </div>
         </footer>
