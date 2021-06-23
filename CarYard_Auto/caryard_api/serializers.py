@@ -1,17 +1,17 @@
 from rest_framework import serializers
 from .models import Car, Customer, Orders   
 
-class CarSerializer(serializers.HyperLinkSerializer):
+class CarSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Car
         fields = '__all__'
 
-class CustomerSerializer(serializers.HyperLinkSerializer):
+class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Customer
-        fields = ('name', 'email', 'phone')
+        fields = '__all__'
 
-class OrderSerializer(serializers.HyperLinkSerializer):
+class OrderSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Order
-        fields = ('date', 'amount', 'customer')
+        model = Orders
+        fields = '__all__'

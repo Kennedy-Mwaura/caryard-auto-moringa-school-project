@@ -5,7 +5,7 @@ from django.db import models
 
 # Create your models here.
 class Car(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255)
     company = models.CharField(max_length=255)
     number = models.IntegerField()
@@ -28,7 +28,7 @@ class Customer(models.Model):
 
 class Orders(models.Model):
     id = models.AutoField(primary_key=True)
-    car =  models.OneToOneField(Car, on_delete=models.CASCADE)
+    car =  models.ForeignKey(Car, on_delete=models.CASCADE)
     customer = models.ManyToManyField(Customer)
     date = models.DateField(auto_now_add=True)
     High = 'H'

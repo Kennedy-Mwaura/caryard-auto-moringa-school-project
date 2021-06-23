@@ -65,3 +65,17 @@
     document.getElementById("cell-mercedesbenz").innerHTML = usersMercedesBenz;
     document.getElementById("cell-audi").innerHTML = usersAudi;
     document.getElementById("cell-isuzu").innerHTML = usersIsuzu;
+
+    $('.apireq').click( function() {
+      $.ajax({
+               url : "http://localhost:8002/api/orders/",
+               dataType: "json",
+               success : function (data) {
+                        $('#date').text( data[1].date);
+                        $('#priority').text( data[1].priority);
+                        $('#amount').text( data[1].amount);
+                        $('#customer').text( data[1].customer);
+                        $('#car').text( data[1].car);
+                      }
+                   });
+               });
