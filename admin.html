@@ -127,16 +127,19 @@
           <br>
           <tr>
             <th>
-              Order details
+              Order ID
             </th>
             <th>
-              Customer Name
+              Customer ID
             </th>
             <th>
               Date
             </th>
             <th>
               Priority
+            </th>
+            <th>
+              Amount
             </th>
           </tr>
         </thead>
@@ -155,6 +158,9 @@
             <td>
               <span class="tag is-danger is-rounded" id="priority"></span>
             </td>
+            <td>
+               <span class="" id="amount" width="100%">  </span>  
+            </td>
           </tr>
           <tr>
             <tr>
@@ -171,6 +177,9 @@
               <td>
                 <span class="tag is-info is-rounded" id="priority1"></span>
               </td>
+              <td>
+                <span class="" id="amount1" width="100%">  </span>  
+             </td>
             </tr>
           <tr>
             <tr>
@@ -187,6 +196,9 @@
               <td>
                 <span class="tag is-info is-rounded" id="priority2"></span>
               </td>
+              <td>
+                <span class="" id="amount2" width="100%">  </span>  
+             </td>
             </tr>
             <tr>
               <th scope="row">
@@ -202,6 +214,9 @@
                 <td>
                   <span class="tag is-info is-rounded" id="priority3"></span>
                 </td>
+                <td>
+                  <span class="" id="amount3" width="100%">  </span>  
+               </td>
             </tr>
         </tbody>
       </table>
@@ -216,6 +231,9 @@
     
         <div class="card">
           <div class="card-body">
+            <div>
+              <button class=" btn btn-success getstats">Get Stats! </button> 
+           </div>
     
             <h5 class="text-center font-weight-bold mb-4">Number of car Sales</h5>
     
@@ -230,10 +248,12 @@
                 <canvas id="pieChart" class="mt-4"></canvas>
     
               </div>
+              
               <!--Grid column-->
     
               <!--Grid column-->
               <div class="col-md-5 mb-4">
+                
     
                 <table class="table">
                   <thead>
