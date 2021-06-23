@@ -15,6 +15,7 @@ body{
     border-radius: 20px;
 }
 
+
 .logo{
     background-color: #5E17EB;
     height: inherit;
@@ -71,7 +72,7 @@ body{
     display: flex;
     flex-direction: column;
     /* font-size: 1.5em; */
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 120px;
 }
 .rec div:hover{
@@ -94,6 +95,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+
 .menu>ul{
     display: flex;
     flex-direction: column;
@@ -105,6 +107,7 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 .menu img{
     max-width: 20%;
     background-color: white;
@@ -158,6 +161,7 @@ tr :hover{
     font-size: 1.2rem;
     box-shadow: 2px 0px 9px grey;
 }
+
 .icons{
     font-size: 2rem;
     width: 60%;
@@ -191,6 +195,7 @@ tr :hover{
     color: black;
 }
 
+
 .info2 a{
     text-decoration: none;
     font-size: 1.4em;
@@ -202,12 +207,12 @@ input[type=text], input[type=email]{
     border-radius: 5px;
     border:1px solid rgb(0, 4, 245);;
 }
-input[type=button]{
+input[type=submit]{
     width: 20%;
     height: 40px;
     border-radius: 10px;
 }
-input[type=button]:hover{
+input[type=submit]:hover{
     background-color: #6C5CE7;
     box-shadow: 2px 2px 4px #6C5CE7;
     border-width: 0px;
@@ -231,3 +236,110 @@ input[type=button]:hover{
     border-right: 4px solid whitesmoke;
 }
 
+                   /* responsive css */
+/* =================================================== */
+  @media only screen and (max-width: 800px) {
+    .head{
+        font-size: 6px;
+        height: 50px;
+    }
+    .rec div{
+        height: 60%;        
+        align-items: center;
+        font-size: 60%;
+
+    }
+
+    .info>div{
+        display: flex;
+        flex-direction: column;
+        font-size: 70%;
+        width: 80%;
+        margin: auto;
+        height: 180px;
+    }
+    .info1>div{
+        font-size: 80%;
+        padding: 10px;
+    }
+    .sec-two>a{
+        font-size: 2em;
+        position: absolute;
+        left: 15px;
+        top: 180px;
+    }
+    .menu {
+        margin: auto;
+        font-size: 70%;
+        margin-top: -40px;
+        width: 200px;
+        height: 300px;
+    }
+    input[type=text], input[type=email]{
+        width: 50%;
+        height: 20px;
+        border-radius: 2.5px;
+        font-size: 70%;
+    }
+    input[type=submit]{
+        width: 20%;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 70%;
+    }
+    .image>img{
+        max-width: 100%;
+    }
+}
+/* ================================================================= */
+@media only screen and (max-width: 1200px) {
+    .head{
+        height: 100px;
+    }
+    .rec div{
+        height: 60%;        
+        align-items: center;
+        font-size: 60%;
+
+    }
+
+    .info>div{
+        display: flex;
+        flex-direction: column;
+        font-size: 70%;
+        width: 80%;
+        margin: auto;
+        height: 180px;
+    }
+    .info1>div{
+        font-size: 100%;
+        padding: 10px;
+    }
+    .sec-two>a{
+        font-size: 2em;
+        position: absolute;
+        left: 30px;
+    }
+    .menu {
+        margin: auto;
+        font-size: 70%;
+        margin-top: 3px;
+        width: 200px;
+        height: 300px;
+    }
+    input[type=text], input[type=email]{
+        width: 50%;
+        height: 20px;
+        border-radius: 2.5px;
+        font-size: 70%;
+    }
+    input[type=submit]{
+        width: 20%;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 70%;
+    }
+    .image>img{
+        max-width: 100%;
+    }
+}
