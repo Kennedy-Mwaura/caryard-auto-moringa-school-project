@@ -90,16 +90,16 @@ function showCar(car){
 }
 prevBtn.addEventListener("click", function(){
     currentCar--;
-    if(currentCar > cars.length - 1){
-        currentCar=0;
+    if(currentCar < 0){
+        currentCar = cars.length-1
     };
     showCar(currentCar);
 });
 nextBtn.addEventListener("click", function(){
     currentCar++;
-    if(currentCar < 0){
-        currentCar=cars.length-1;
+    if(currentCar > cars.length-1){
+        currentCar=0
     };
     showCar(currentCar);
-})
+});
 
